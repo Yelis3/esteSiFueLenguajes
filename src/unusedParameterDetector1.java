@@ -1,16 +1,13 @@
-import com.jediterm.terminal.model.TerminalLine;
-import org.antlr.v4.runtime.Token;
-import org.antlr.v4.runtime.tree.ErrorNode;
-import org.antlr.v4.runtime.tree.TerminalNode;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
 
-import java.util.*;
-
-public class unusedParameter<T> extends pythonBaseListener{
+public class unusedParameterDetector1<T> extends pythonBaseListener{
     //pythonParser.FuncdefContext func;
     HashMap<String, couple<Integer, Boolean> > myMap = new HashMap<String, couple<Integer, Boolean> > ();
 
-    LinkedList<couple<couple<String, Integer>, ArrayList<couple<String, Integer> > > > couples;
-    public unusedParameter(LinkedList<couple<couple<String, Integer>, ArrayList<couple<String, Integer> > > > couples){
+    LinkedList<couple<couple<String, Integer>, ArrayList<couple<String, Integer> >> > couples;
+    public unusedParameterDetector1(LinkedList<couple<couple<String, Integer>, ArrayList<couple<String, Integer> > > > couples){
         this.couples = couples;
     }
 
@@ -40,9 +37,12 @@ public class unusedParameter<T> extends pythonBaseListener{
 
     @Override
     public void enterAtom(pythonParser.AtomContext ctx) {
+        //System.out.println(ctx.NAME());
         if(ctx.NAME() != null) {
+            //System.out.println("dentro");
             couple<Integer, Boolean> aux = myMap.get(ctx.NAME().toString());
-            myMap.put(ctx.NAME().toString(), new couple<Integer, Boolean>(aux.t1, true));
+            if(aux != null)
+                myMap.put(ctx.NAME().toString(), new couple<Integer, Boolean>(aux.t1, true));
         }
     }
 }

@@ -1,0 +1,18 @@
+def algo(a, b):
+    6
+    4
+    return a + b
+
+def otro(c, d):
+    3
+    5
+    return c * d
+
+def otro2(z):
+    return z
+
+    algo(3 , 5)
+algo(3 , 5)
+otro(11, 33)
+otro2(3)
+algo(3 , 5)

@@ -14,16 +14,18 @@ public class Detector {
         ParseTree tree = parser.file_input();//poner el elemento root de la gramatica
 
 
-        LinkedList<couple<couple<String, Integer>, ArrayList<couple<String, Integer> > > > couples =
+        LinkedList<couple<couple<String, Integer>, ArrayList<couple<String, Integer> > > > datos1 =
                 new LinkedList<couple<couple<String, Integer>, ArrayList<couple<String, Integer> > > >();
-
-
         ParseTreeWalker walker = new ParseTreeWalker();
-        walker.walk(new unusedParameter(couples), tree);
+        walker.walk(new unusedParameterDetector1(datos1), tree);
 
-        for(couple<couple<String, Integer>, ArrayList<couple<String, Integer> > >  x : couples){
-            System.out.println(x.toString());
-        }
+        LinkedList<Integer[]>[] datos2 = new LinkedList[datos1.size()];
+        for(int i=0; i< datos1.size(); i++)
+            datos2[i] = new LinkedList<Integer[]>();
+        unusedParameterDetector2<Object> loader = new unusedParameterDetector2<Object>(datos1, datos2);
+        loader.visit(tree);
 
+        new unusedParameterRefactor(datos1, datos2);
+        unusedParameterRefactor.generateOutputCode("input.txt", "output.txt");
     }
 }

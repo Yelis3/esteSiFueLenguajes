@@ -3,10 +3,16 @@ def algo(a, b, x):
     4
     return a + b
 
-def otro(c, d,w):
+def otro(c, a, d, sw):
     3
     5
     return c * d
 
-def otro(z, j, i , hj):
+def otro2(z, j, i , hj):
     return z
+
+    algo(3 , 5, 3)
+algo(3 , 5, 3)
+otro(11, 22, 33, 44)
+otro2(3, 2, 4, 5)
+algo(3 , 5, 3)
