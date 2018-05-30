@@ -1,9 +1,12 @@
-var pi as 3.1415;
-var x as 1;
-print pi;
+def algo(a, b, x):
+    6
+    4
+    return a + b
 
-if pi > 3 then
-	repeat 3 times
-		print pi+x;
-	endrepeat
-endif
+def otro(c, d,w):
+    3
+    5
+    return c * d
+
+def otro(z, j, i , hj):
+    return z

@@ -1,4 +1,4 @@
-grammar Python3;
+grammar python;
 
 tokens { INDENT, DEDENT }
 
@@ -29,7 +29,7 @@ tokens { INDENT, DEDENT }
       }
 
       // First emit an extra line break that serves as the end of the statement.
-      this.emit(commonToken(Python3Parser.NEWLINE, "\n"));
+      this.emit(commonToken(pythonLexer.NEWLINE, "\n"));
 
       // Now emit as much DEDENT tokens as needed.
       while (!indents.isEmpty()) {
@@ -38,7 +38,7 @@ tokens { INDENT, DEDENT }
       }
 
       // Put the EOF back on the token stream.
-      this.emit(commonToken(Python3Parser.EOF, "<EOF>"));
+      this.emit(commonToken(pythonLexer.EOF, "<EOF>"));
     }
 
     Token next = super.nextToken();
@@ -52,7 +52,7 @@ tokens { INDENT, DEDENT }
   }
 
   private Token createDedent() {
-    CommonToken dedent = commonToken(Python3Parser.DEDENT, "");
+    CommonToken dedent = commonToken(pythonLexer.DEDENT, "");
     dedent.setLine(this.lastToken.getLine());
     return dedent;
   }
@@ -70,7 +70,7 @@ tokens { INDENT, DEDENT }
   //  such that the total number of characters up to and including
   //  the replacement is a multiple of eight [...]"
   //
-  //  -- https://docs.python.org/3.1/reference/lexical_analysis.html#indentation
+  //  -- https://docs.pythonLexer.org/3.1/reference/lexical_analysis.html#indentation
   static int getIndentationCount(String spaces) {
     int count = 0;
     for (char ch : spaces.toCharArray()) {
@@ -317,7 +317,7 @@ NEWLINE
        }
        else if (indent > previous) {
          indents.push(indent);
-         emit(commonToken(Python3Parser.INDENT, spaces));
+         emit(commonToken(pythonLexer.INDENT, spaces));
        }
        else {
          // Possibly emit more than 1 DEDENT token.
