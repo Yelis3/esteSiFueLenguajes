@@ -1,5 +1,2 @@
-def myfunc(a)
+def myfun(a, b, c, d, e):
     return a
-
-
-myfunc(5)

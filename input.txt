@@ -16,3 +16,28 @@ algo(3 , 5, 3)
 otro(11, 22, 33, 44)
 otro2(3, 2, 4, 5)
 algo(3 , 5, 3)
+
+
+if True:
+    print("hola")
+    print("hola")
+    print("hola")
+elif True:
+    print("hola")
+    print("hola")
+    print("hola")
+else:
+    print("hola")
+    print("hola")
+    print("hola")
+
+if True:
+    print("hola")
+elif True:
+    print("hola")
+else:
+    print("hola")
+
+
+def myfunction(a,b,c,d,e,f,g,h,i):
+    return h
