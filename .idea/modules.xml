@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Code smells detector.iml" filepath="$PROJECT_DIR$/.idea/Code smells detector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/full-rest-api.iml" filepath="$PROJECT_DIR$/full-rest-api.iml" />
     </modules>
   </component>
 </project>

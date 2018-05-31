@@ -1,7 +1,9 @@
 def fun1(a, b):
+    a = a + b
     return a + b
 
 def fun2(c, d):
+    c = c + 34
     return c * d
 
 def fun3(z):
@@ -17,28 +19,6 @@ def suma(x1, x2, x3, x4, x5, x6):
 
 def multi(x1, x2, x3):
     return x1 * x2 * x3
-
-
-if True:
-    print("hola")
-    print("hola")
-    print("hola")
-elif True:
-    print("hola")
-    print("hola")
-    print("hola")
-else:
-    print("hola")
-    print("hola")
-    print("hola")
-
-if True:
-    print("hola")
-elif True:
-    print("hola")
-else:
-    print("hola")
-
 
 def myfunction(h):
     return h

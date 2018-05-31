@@ -1,2 +1,5 @@
-def myfun(a, b, c, d, e):
+def myfunc(a)
     return a
+
+
+myfunc(5)

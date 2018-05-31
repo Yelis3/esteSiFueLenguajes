@@ -1,7 +1,6 @@
 
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
-import org.jvnet.ws.wadl.Link;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +8,7 @@ import java.util.LinkedList;
 
 public class Detector {
 
-    public static void main(String [] args) throws Exception{
+    public static void Detect(String [] args) throws Exception{
         pythonLexer lexer = new pythonLexer(CharStreams.fromFileName("input.txt"));
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         pythonParser parser = new pythonParser(tokens);
