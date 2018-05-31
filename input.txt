@@ -1,18 +1,44 @@
-def algo(a, b, x):
-    6
-    4
+def fun1(a, b, x):
     return a + b
 
-def otro(c, a, d, sw):
-    3
-    5
+def fun2(c, a, d, sw):
     return c * d
 
-def otro2(z, j, i , hj):
+def fun3(z, j, i , hj):
     return z
+    fun1(3 , 5, 3)
 
-    algo(3 , 5, 3)
-algo(3 , 5, 3)
-otro(11, 22, 33, 44)
-otro2(3, 2, 4, 5)
-algo(3 , 5, 3)
+fun2(11, 22, 33, 44)
+fun3(3, 2, 4, 5)
+
+
+def suma(x1, x2, x3, x4, x5, x6):
+    return x1 + x2 + x3 + x4 + x5 + x6
+
+def multi(x1, x2, x3):
+    return x1 * x2 * x3
+
+
+if True:
+    print("hola")
+    print("hola")
+    print("hola")
+elif True:
+    print("hola")
+    print("hola")
+    print("hola")
+else:
+    print("hola")
+    print("hola")
+    print("hola")
+
+if True:
+    print("hola")
+elif True:
+    print("hola")
+else:
+    print("hola")
+
+
+def myfunction(a,b,c,d,e,f,g,h,i):
+    return h
