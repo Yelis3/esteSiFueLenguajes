@@ -36,9 +36,12 @@ public class Detector {
         unusedParameterRefactor.generateOutputCode("input.txt", "output.txt");
 
         //  Duplicate Conditional Fragments Smell
-//        LinkedList<LinkedList<LinkedList<couple<String, Integer>> > > datos3 = new LinkedList<LinkedList<LinkedList<couple<String, Integer>> > >();
-//        walker.walk(new duplicateConditionalFragmentsDetector(datos3), tree);
-//
+        LinkedList<couple<Integer, couple<Integer, LinkedList<Integer>>>> datos3 = new LinkedList<couple<Integer, couple<Integer, LinkedList<Integer>>>>();
+        LinkedList<couple<Integer, couple<Integer, LinkedList<Integer>>>> datos4 = new LinkedList<couple<Integer, couple<Integer, LinkedList<Integer>>>>();
+        walker.walk(new duplicateConditionalFragmentsDetector("input.txt" , datos3, datos4), tree);
+        duplicateConditionalFragmentsDetector.calculate();
+        duplicateConditionalFragmentsDetector.print();
+
 //        for(LinkedList<LinkedList<couple<String, Integer>> > x : datos3){
 //            for(LinkedList<couple<String, Integer>> y : x )
 //        }
