@@ -2,13 +2,32 @@
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
 
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Arrays;
 import java.util.LinkedList;
 
+
 public class Detector {
 
-    public static void Detect(String [] args) throws Exception{
+    public void detect(String [] auxArray) throws Exception {
+        String input = "input.txt";
+        Path path = Paths.get(input);
+        List<String> lines = new LinkedList<String>();
+        for(String x:auxArray)
+            lines.add(x);
+        System.out.println(lines);
+        try {
+            Files.write(path, lines, StandardCharsets.UTF_8);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         pythonLexer lexer = new pythonLexer(CharStreams.fromFileName("input.txt"));
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         pythonParser parser = new pythonParser(tokens);

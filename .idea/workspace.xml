@@ -17,33 +17,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DetectorController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DetectorController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DetectorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="210">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#440#448#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/input.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Detector.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Detector.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Detector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="34" column="78" lean-forward="true" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
+            <state relative-caret-position="68">
+              <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,11 +44,8 @@
       <file leaf-file-name="unusedParameterRefactor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/unusedParameterRefactor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="22" column="89" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="89" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -94,12 +81,12 @@
         <option value="$PROJECT_DIR$/gen/pythonLexer.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/longParameterListDetector.java" />
-        <option value="$PROJECT_DIR$/src/unusedParameterRefactor.java" />
         <option value="$PROJECT_DIR$/input.txt" />
         <option value="$PROJECT_DIR$/src/RefactorController.java" />
         <option value="$PROJECT_DIR$/src/MyApplication.java" />
-        <option value="$PROJECT_DIR$/src/Detector.java" />
+        <option value="$PROJECT_DIR$/src/unusedParameterRefactor.java" />
         <option value="$PROJECT_DIR$/src/DetectorController.java" />
+        <option value="$PROJECT_DIR$/src/Detector.java" />
       </list>
     </option>
   </component>
@@ -339,15 +326,16 @@
       <workItem from="1527686654983" duration="10428000" />
       <workItem from="1527719110735" duration="1133000" />
       <workItem from="1527748741968" duration="1479000" />
-      <workItem from="1527750415718" duration="6300000" />
+      <workItem from="1527750415718" duration="9353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26332000" />
+    <option name="totallyTimeSpent" value="29385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -368,9 +356,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3161512" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17697595" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21623732" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21623732" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -419,14 +407,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/longParameterListDetector.java">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#640#648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DetectorController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -434,7 +426,6 @@
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#440#448#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -457,15 +448,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/longParameterListDetector.java">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#640#648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/unusedParameterRefactor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -489,7 +484,6 @@
           <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#440#448#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -527,7 +521,6 @@
           <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#440#448#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -713,24 +706,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/longParameterListDetector.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Detector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="34" column="78" lean-forward="true" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
+        <state>
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unusedParameterRefactor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="22" column="89" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#640#648#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -742,13 +722,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/unusedParameterRefactor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DetectorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="210">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#440#448#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Detector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

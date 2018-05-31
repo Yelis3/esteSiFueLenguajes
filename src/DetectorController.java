@@ -11,21 +11,12 @@ import java.util.List;
 public class DetectorController {
     @POST
     @Consumes("application/json")
-    public String Detect(String code) throws IOException {
-        String input = "holiiiii.txt";
-        java.nio.file.Path path = Paths.get(input);
-        List<String> lines = new LinkedList<String>();
-
+    public String Detect(String code) throws Exception {
         String[] auxArray = code.split("~");
 
-        System.out.println(Arrays.toString(auxArray));
+        Detector detector = new Detector();
+        detector.detect(auxArray);
 
-        for(String x:auxArray)
-            lines.add(x);
-
-        Files.write(path, lines, StandardCharsets.UTF_8);
-
-        System.out.println(lines);
-        return "code recieved successfully from server";
+        return "code received successfully from server";
     }
 }
